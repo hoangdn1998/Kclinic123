@@ -1,0 +1,476 @@
+﻿@model Kclinic.Models.ViewModels.HomeVM
+
+@*
+<div class="row pb-3">
+	@foreach(var blog in Model)
+	{
+		<div class="col-lg-3 col-md-6">
+			<div class="row p-2">
+				<div class="col-12 p-1" style="border:1px solid #008cba; border-radius: 5px;">
+					<div class="card">
+						<img src="@blog.ImageUrl" class="card-img-top rounded"/>
+
+						<div class="card-body">
+						<div class="pl-1">
+							<p class="card-title h5 text-primary">@blog.Title</p>
+							<p class="card-title text-info">by <b>@blog.Author</b></p>
+						</div>
+						</div>
+					</div>
+					<div>
+						<a asp-action="Details" class="btn btn-primary form-control" asp-route-id="@blog.Id">
+							Details
+						</a>
+					</div>
+				</div> 
+			</div>
+		</div>
+	}
+</div>
+*@
+
+
+
+
+<!-- HOME -->
+<section id="home" class="slider" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row">
+
+            <div class="owl-carousel owl-theme">
+                <div class="item item-first">
+                    <div class="caption">
+                        <div class="col-md-offset-1 col-md-10">
+                            <h3>Cùng Bạn tạo nên một cuộc sống khỏe mạnh </h3>
+                            <h1>Kclinic</h1>
+                            <a href="#team" class="section-btn btn btn-default smoothScroll"> Ứng dụng Kclinic có thể làm gì ?</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item item-second">
+                    <div class="caption">
+                        <div class="col-md-offset-1 col-md-10">
+                            <h3>Ứng dụng Quản Lý Khám bệnh</h3>
+                            <h1>Kclinic</h1>
+                            <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">Giới thiệu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item item-third">
+                    <div class="caption">
+                        <div class="col-md-offset-1 col-md-10">
+                            <h3>Tin tức</h3>
+                            <h1>Tin hot trong ngày</h1>
+                            <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Đọc tin tức</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="">
+    <div class="container">
+        <div class="row">
+            
+
+
+            <div class="col-md-6 col-sm-6">
+                <div class="about-info">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.6s">K.Clinic – Phần mềm quản lý phòng khám toàn diện và chuyên sâu.</h2>
+                    <div class="wow fadeInUp" data-wow-delay="0.8s">
+                        <p>
+                            Phần mềm K.Clinic được phát triển dành cho các phòng khám, phòng xét nghiệm, chẩn đoán hình ảnh. Giúp người sử dụng thuận tiện hơn trong quản lý dữ liệu nhập, xuất và báo cáo
+                        </p>
+                        <p>
+                            Phần mềm K.Clinic được phát triển dành cho các phòng khám, phòng
+                            xét nghiệm, chẩn đoán hình ảnh. Giúp người sử dụng thuận tiện hơn
+                            trong quản lý dữ liệu nhập, xuất và báo cáo.
+                        </p>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <img src="~/asset/images/BigImageDes.png" class="img-responsive" alt="">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- UUDIEM -->
+<section id="adv">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ml-auto mr-auto text-center row  justify-content-center">
+                <h2 class="wow fadeInUp" data-wow-delay="0.6s">Ưu điểm vượt trội của VT Clinic</h2>
+                <p class="wow fadeInUp" data-wow-delay="0.6s">
+                    Tính năng được xây dựng dựa trên kinh nghiệm thực tế và sự đóng góp từ các CG, Bác sĩ đầu ngành
+                </p>
+                <div class="row text-center w-100">
+                    <div class="col-lg-12 py-5 d-flex text-center">
+                        <img src="~/asset/images/sieu-am (2).png" style="width:740px; height:520px" class="img-container" alt="vttech header">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="advs" class="py-md-0 my-5" style="margin-top:3rem; margin-bottom:3rem;">
+    <div class="container my-5" style="margin-top:3rem; margin-bottom:3rem;">
+        <div class="row py-3 bg-gradient-primary">
+            <div class="col-md-12 ml-auto mr-auto ">
+                <div class="row">
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="d-flex">
+                            <div class="ml-2">
+                                <img class="img" width="35" height="35" title="icon 05" alt="icon 05" src="~/asset/images/ic-05.svg">
+                            </div>
+                            <div class="card-body py-0">
+                                <h3 class="my-0 title h4 fw-bold">An toàn &amp; bảo mật </h3>
+                                <p class="h5 mt-0 mr-lg-4">
+                                    Bảo mật hệ thống qua nhiều lớp phân quyền, kiểm soát mọi hoạt động của người dùng.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="d-flex">
+                            <div class="ml-2">
+                                <img class="img" width="35" height="35" title="icon 06" alt="icon 06" src="~/asset/images/ic-06.svg">
+                            </div>
+                            <div class="card-body py-0">
+                                <h3 class="my-0 title h4 fw-bold">Linh hoạt &amp; hiệu quả</h3>
+                                <p class="h5 mt-0 mr-lg-4">
+                                    Linh hoạt tùy chỉnh, quy trình quản lý được thiết kế bám sát nghiệp vụ tại phòng khám.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <div class="d-flex">
+                            <div class="ml-2">
+                                <img class="img" width="35" height="35" title="icon 07" alt="icon 07" src="~/asset/images/ic-05.svg">
+                            </div>
+                            <div class="card-body py-0">
+                                <h3 class="my-0 title h4 fw-bold">Trực quan &amp; dễ dùng</h3>
+                                <p class="h5 mt-0 mr-lg-4">
+                                    Thông tin thể hiện tại 1 nơi, các tính năng được thiết kế tối giản phục vụ cho nhiều đối tượng.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CHUCNANG -->
+<section id="func" class="">
+    <div class="container mt-3 mb-3">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="about-info">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.6s">Các tính năng quản lý chuyên khoa</h2>
+                    <h4 class="wow fadeInUp" data-wow-delay="0.8s">
+                    Phần mềm quản lý phòng khám Kclinic giúp quản lý bệnh nhân, lịch hẹn, đơn thuốc và nhiều hơn thế nữa ...
+                    </h4>
+                </div>
+                <div id="funcarea" class="row" style="padding-top:40px;">
+                    <div class="col-lg-3 col-md-4 col-6 px-3 mb-2">
+                        <a href="/chuc-nang/phong-kham/ho-so-khach-hang-phong-kham" target="_self" class="text-center">
+                            <div class=" d-flex justify-content-center">
+                                <img src="~/asset/images/ho-so-dien-tu.png" style="width:45px; height:45px;"/>
+                            </div>
+                            <h3 style="margin-bottom:25px;">Hồ sơ điện tử</h3>
+                        </a>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 px-3 mb-2">
+                        <a href="/chuc-nang/phong-kham/lich-hen-phong-kham" target="_self" class="text-center">
+                            <div class=" d-flex justify-content-center">
+                                <img src="~/asset/images/lich-hen.png" style="width:45px; height:45px;" />
+                            </div>
+                            <h3 style="margin-bottom:25px;">Lịch hẹn - Điều phối</h3>
+                        </a>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 px-3 mb-2">
+                        <a href="/chuc-nang/phong-kham/chan-doan-phong-kham" target="_self" class="text-center">
+                            <div class=" d-flex justify-content-center">
+                                <img src="~/asset/images/patient-file.png" style="width:45px; height:45px;" />
+                            </div>
+                            <h3 style="margin-bottom:25px;">Chẩn đoán - Tiền sử</h3>
+                        </a>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 px-3 mb-2">
+                        <a href="/chuc-nang/phong-kham/benh-an-dien-tu-phong-kham" target="_self" class="text-center">
+                            <div class=" d-flex justify-content-center">
+                                <img src="~/asset/images/patient.png" style="width:45px; height:45px;" />
+                            </div>
+                            <h3 style="margin-bottom:25px;">Kế hoạch điều trị</h3>
+                        </a>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 px-3 mb-2">
+                        <a href="/chuc-nang/phong-kham/dich-vu-dieu-tri-phong-kham" target="_self" class="text-center">
+                            <div class=" d-flex justify-content-center">
+                                <img src="~/asset/images/dich-vu.png" style="width:45px; height:45px;" />
+                            </div>
+                            <h3 style="margin-bottom:25px;">Dịch vụ - Sản phẩm</h3>
+                        </a>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 px-3 mb-2">
+                        <a href="/chuc-nang/phong-kham/quan-ly-telesale-phong-kham" target="_self" class="text-center">
+                            <div class=" d-flex justify-content-center">
+                                <img src="~/asset/images/telesaleMarketing.png" style="width:45px; height:45px;" />
+                            </div>
+                            <h3 style="margin-bottom:25px;">Telesale - Marketing</h3>
+                        </a>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 px-3 mb-2">
+                        <a href="/chuc-nang/phong-kham/quan-ly-kho-phong-kham" target="_self" class="text-center">
+                            <div class=" d-flex justify-content-center">
+                                <img src="~/asset/images/kho.png" style="width:45px; height:45px;" />
+                            </div>
+                            <h3 style="margin-bottom:25px;">Kho - Vật tư tiêu hao</h3>
+                        </a>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 px-3 mb-2">
+                        <a href="/chuc-nang/phong-kham/quan-ly-voucher-phong-kham" target="_self" class="text-center">
+                            <div class=" d-flex justify-content-center">
+                                <img src="~/asset/images/voucher.png" style="width:45px; height:45px;"/>
+                            </div>
+                            <h3 style="margin-bottom:25px;">Voucher - Khuyến mãi</h3>
+                        </a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Product -->
+<section id="team" class="" data-stellar-background-ratio="1">
+    <div class="container mt-3 mb-3">
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12">
+                <!-- SECTION TITLE -->
+                <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                    <h2>Sản phẩm của chúng tôi</h2>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            @{
+                double delay = 0.2;
+            }
+
+            @foreach (var product in Model.Products)
+            {
+                <div class="col-md-4 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="@delay.ToString("F1")s">
+                        <img src="@product.ImageUrl" class="img-responsive" style="width: 360px; height: 240px;" alt="">
+
+                        <div class="team-info">
+                            <a asp-action="Details" asp-route-productId="@product.Id">
+                            <h3>@product.Name</h3>
+                            </a>
+                            <br \>
+                            @{
+                                // Convert the price to a string
+                                string priceString = product.Price.ToString("N0"); // N0 format adds thousands separators
+                            }
+                            <h3><span>@priceString</span><span><span> .VNĐ</span></h3>
+                            <div class="team-contact-info">
+                                <p><i class="fa fa-phone"></i> 0932 070 463 - 0903 555 753</p>
+                                <p><i class="fa fa-envelope-o"></i> <a href="#">www.kclgroup.vn</a></p>
+                            </div>
+                            <ul class="social-icon">
+                                <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                                <li><a href="#" class="fa fa-envelope-o"></a></li>
+                            </ul>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                delay += 0.2;
+            }
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- NEWS -->
+<section id="news" class="" data-stellar-background-ratio="2.5">
+    <div class="container mt-3 mb-3">
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12">
+                <!-- SECTION TITLE -->
+                <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                    <h2>Tin tức mới nhất</h2>
+                </div>
+            </div>
+
+            @foreach (var blog in Model.Blogs)
+            {
+                <div class="col-md-4 col-sm-6 mb-20" style="margin-bottom: 30px;">
+                    <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
+                        <a asp-action="DetailsBlog" asp-route-id="@blog.Id">
+                            <img src="@blog.ImageUrl" class="img-responsive" style="width: 360px; height: 240px;" alt="">
+                        </a>
+                        <div class="news-info">
+                            <h3>
+                                <a asp-action="DetailsBlog"asp-route-id="@blog.Id">
+                                    @blog.Title
+                                </a>
+                            </h3>
+                            @{
+                                string description = blog.Description;
+
+                                // Remove HTML tags and keep only the text content
+                                string textContent = System.Text.RegularExpressions.Regex.Replace(description, "<.*?>", "");
+
+                                string[] words = textContent.Split(' ');
+                                int maxWords = 20;
+                                string truncatedDescription = string.Join(" ", words.Take(maxWords));
+                            }
+                            <p>@Html.Raw($"<p>{truncatedDescription}</p>")...</p>
+                            <div class="author">
+                                
+                                <div class="author-info">
+                                    <h5 style="display: inline;"><strong>Tác giả: </strong></h5>
+                                    <h5 style ="display: inline;">@blog.Author</h5>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            }
+
+           @* <div class="col-md-4 col-sm-6">
+                <!-- NEWS THUMB -->
+                <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
+                    <a href="news-detail.html">
+                        <img src="images/imgs/news-image3.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="news-info">
+                        <span>January 27, 2018</span>
+                        <h3><a href="news-detail.html">Review Annual Medical Research</a></h3>
+                        <p>Vivamus non nulla semper diam cursus maximus. Pellentesque dignissim.</p>
+                        <div class="author">
+                            <img src="images/imgs/author-image.jpg" class="img-responsive" alt="">
+                            <div class="author-info">
+                                <h5>Andrio Abero</h5>
+                                <p>Online Advertising</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+
+        </div>
+    </div>
+</section>
+
+
+<!-- MAKE AN APPOINTMENT -->
+<section id="appointment" data-stellar-background-ratio="3">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6">
+                <img src="~/asset/images/appointment-image.jpg" class="img-responsive" alt="">
+            </div>
+
+            <div class="col-md-6 col-sm-6">
+                <!-- CONTACT FORM HERE -->
+                <form id="appointment-form" role="form" method="post" asp-action="Create" asp-area="Customer" asp-controller="Trial">
+
+                    <!-- SECTION TITLE -->
+                    <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                        <h2>Bắt đầu dùng thử miễn phí</h2>
+                    </div>
+
+                    <div class="wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="col-md-6 col-sm-6">
+                            <label asp-for="@Model.Trial.Name">Tên</label>
+                            <input asp-for="@Model.Trial.Name" type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+                            <span asp-validation-for="@Model.Trial.Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <label asp-for="@Model.Trial.Email">Email</label>
+                            <input asp-for="@Model.Trial.Email" type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                            <span asp-validation-for="@Model.Trial.Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <label asp-for="@Model.Trial.Field" >Bạn đang làm ở lĩnh vực nào</label>
+                            <input asp-for="@Model.Trial.Field" type="text" class="form-control" id="field" name="field" placeholder="working field">
+                            <span asp-validation-for="@Model.Trial.Field" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <label asp-for="@Model.Trial.Phone">Số điện thoại</label>
+                            <input asp-for="@Model.Trial.Phone" type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
+                            <span asp-validation-for="@Model.Trial.Phone" class="text-danger"></span>
+
+                            <label asp-for="@Model.Trial.Message">Để lại lời nhắn</label>
+                            <textarea asp-for="@Model.Trial.Message" class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
+                            <span asp-validation-for="@Model.Trial.Message" class="text-danger"></span>
+                            <button type="submit" class="form-control" id="cf-submit" name="submit">Liên hệ ngay</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- GOOGLE MAP -->
+<section id="google-map">
+    <!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+    -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.2417671116687!2d108.20806877489419!3d16.052939139874308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219b9ce0625c7%3A0xbf63be46a3f58014!2zMTYwIEzDqiDEkMOsbmggTMO9LCBIw7JhIFRodeG6rW4gxJDDtG5nLCBI4bqjaSBDaMOidSwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1691979484558!5m2!1svi!2s" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>           
